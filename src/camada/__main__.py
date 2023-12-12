@@ -16,7 +16,8 @@ strBitsParaTransmitir = strBits + calcular_bit_paridade_par(strBits)
 # Iria para camada física → modulação da onda ~ (camada física) → transmite
 
 # Simula uma interferênica no meio da transmissão que mudou 1 bit
-strBitsRecebidaComErro = simular_erro(strBits, 1)
+## toDo: decidir "aleatóriamente" qtd bits seram flipados
+strBitsRecebidaComErro = simular_erro(strBitsParaTransmitir, 1)
 
 # Reptor receberia → demodulação da onda ~ (camada física) → camada de enlace interpreta os bits
 

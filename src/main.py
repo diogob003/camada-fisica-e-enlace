@@ -190,5 +190,5 @@ class MyApp(Gtk.Application):
         self.win.present()
 
 # Create and run a new application
-app = MyApp(application_id="com.github.jessica8melo.Trabalho_TR1")
+app = MyApp(application_id="com.github.diogob003.camada-fisica-e-enlace")
 app.run(None)

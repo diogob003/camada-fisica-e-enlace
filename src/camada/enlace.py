@@ -43,14 +43,14 @@ def insercao_caractere(entrada):
     return lista
 
 def simular_erro(strDeBits: str, qtdErros: int):
+    lstDeBits = list(strDeBits)
+
     for j in range(0, qtdErros):
         # Gera um número inteiro aletório no intervalo [0, len(strDeBits)-1]
         i = np.random.randint(len(strDeBits)-1)
 
-        lstDeBits = list(strDeBits)
         # Inverte o bit na posição "i"
         lstDeBits[i] = str(1 - int(lstDeBits[i]))
-
     return "".join(lstDeBits)
 
 # Converte lista de char → string de bits
